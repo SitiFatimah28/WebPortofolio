@@ -1,0 +1,35 @@
+.container {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-image: url('img/R.jpeg'); /* Ganti 'background.jpg' dengan URL gambar background Anda */
+    background-size: cover;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    padding-top: 3rem;
+    position: relative; /* Menetapkan posisi relatif untuk konten overlay */
+  }
+  /* CSS untuk overlay gelap */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Warna gelap dan transparansi */
+    border-radius: 10px;
+  }
+  /* CSS untuk teks di dalam container */
+  .text {
+    color: white;
+    position: relative; /* Menetapkan posisi relatif untuk teks agar berada di atas overlay */
+    z-index: 1; /* Menetapkan z-index agar teks berada di depan overlay */
+  }
+  .footer {
+    background-color: #343a40;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
